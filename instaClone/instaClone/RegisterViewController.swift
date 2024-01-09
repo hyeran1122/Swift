@@ -51,9 +51,7 @@ class RegisterViewController: UIViewController {
     
     @IBOutlet weak var passwordTextField: UITextField!
     
-    
     @IBOutlet weak var singupButton: UIButton!
-    
     
     @IBOutlet weak var poptoLoginButton: UIButton!
     
@@ -112,6 +110,7 @@ class RegisterViewController: UIViewController {
         
     }
     
+    //가입하기버튼
     @IBAction func registerButtonDidTap(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
         let userInfo = UserInfo(email: self.email, name: self.name, nickname: self.nickname, password: self.password)
@@ -124,14 +123,13 @@ class RegisterViewController: UIViewController {
     //MARK: - Helpers
     
     //연결 메소드
-   
     private func setupTextField() {
         textFields.forEach { tf in
             tf.addTarget(self, action: #selector(textFieldEditingChange(_:)), for: .editingChanged)
         }
     }
     
-   
+    
     
     private func validateUserInfo() {
         if isValidEmail && isvalidName && isValidNickName && isValidPassword {

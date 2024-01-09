@@ -191,18 +191,68 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5q-Mp-gxe">
-                                <rect key="frame" x="161.66666666666666" y="411" width="70" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KUE-4x-eRy">
+                                <rect key="frame" x="0.0" y="59" width="393" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_catstagram_logo" translatesAutoresizingMaskIntoConstraints="NO" id="TsE-LM-bhI">
+                                        <rect key="frame" x="15" y="5" width="140" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="140" id="uHi-3g-eEc"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zfp-8q-p29">
+                                        <rect key="frame" x="353" y="12.666666666666671" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Zfp-8q-p29" secondAttribute="height" multiplier="1:1" id="3Tv-G3-nbz"/>
+                                            <constraint firstAttribute="width" constant="25" id="FrJ-rK-LVJ"/>
+                                            <constraint firstAttribute="height" constant="25" id="gVf-1i-Gut"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button" image="ic_home_send"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fN1-qQ-cVx">
+                                        <rect key="frame" x="313" y="12.666666666666671" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="9fg-9L-TCt"/>
+                                            <constraint firstAttribute="width" secondItem="fN1-qQ-cVx" secondAttribute="height" multiplier="1:1" id="jje-Q6-169"/>
+                                            <constraint firstAttribute="height" constant="25" id="jsq-Z4-YAq"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button" image="ic_home_heart"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kjJ-SO-Oht">
+                                        <rect key="frame" x="273" y="12.666666666666671" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="kjJ-SO-Oht" secondAttribute="height" multiplier="1:1" id="JmU-Aq-IDz"/>
+                                            <constraint firstAttribute="height" constant="25" id="a9H-Aj-3FQ"/>
+                                            <constraint firstAttribute="width" constant="25" id="qYr-SX-BGa"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button" image="ic_home_upload"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="09F-zL-41D"/>
+                                    <constraint firstItem="Zfp-8q-p29" firstAttribute="leading" secondItem="fN1-qQ-cVx" secondAttribute="trailing" constant="15" id="5JF-0K-jpD"/>
+                                    <constraint firstItem="Zfp-8q-p29" firstAttribute="centerY" secondItem="KUE-4x-eRy" secondAttribute="centerY" id="7KA-sj-HRj"/>
+                                    <constraint firstItem="kjJ-SO-Oht" firstAttribute="centerY" secondItem="KUE-4x-eRy" secondAttribute="centerY" id="IWd-a8-T1G"/>
+                                    <constraint firstAttribute="trailing" secondItem="Zfp-8q-p29" secondAttribute="trailing" constant="15" id="IsU-6o-waI"/>
+                                    <constraint firstItem="fN1-qQ-cVx" firstAttribute="centerY" secondItem="KUE-4x-eRy" secondAttribute="centerY" id="JG9-hV-ttz"/>
+                                    <constraint firstItem="TsE-LM-bhI" firstAttribute="leading" secondItem="KUE-4x-eRy" secondAttribute="leading" constant="15" id="ZHO-kV-v3C"/>
+                                    <constraint firstAttribute="bottom" secondItem="TsE-LM-bhI" secondAttribute="bottom" constant="5" id="lo3-U1-Xqt"/>
+                                    <constraint firstItem="TsE-LM-bhI" firstAttribute="centerY" secondItem="KUE-4x-eRy" secondAttribute="centerY" id="qLm-2g-FIK"/>
+                                    <constraint firstItem="TsE-LM-bhI" firstAttribute="top" secondItem="KUE-4x-eRy" secondAttribute="top" constant="5" id="wL5-7V-FfE"/>
+                                    <constraint firstItem="fN1-qQ-cVx" firstAttribute="leading" secondItem="kjJ-SO-Oht" secondAttribute="trailing" constant="15" id="zPX-dM-gNl"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jKu-q4-xlV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="h5q-Mp-gxe" firstAttribute="centerY" secondItem="FrX-EN-87R" secondAttribute="centerY" id="nWn-Zn-XHd"/>
-                            <constraint firstItem="h5q-Mp-gxe" firstAttribute="centerX" secondItem="FrX-EN-87R" secondAttribute="centerX" id="nwt-T0-l2Q"/>
+                            <constraint firstItem="KUE-4x-eRy" firstAttribute="leading" secondItem="jKu-q4-xlV" secondAttribute="leading" id="hIe-Uq-IDo"/>
+                            <constraint firstItem="KUE-4x-eRy" firstAttribute="top" secondItem="jKu-q4-xlV" secondAttribute="top" id="v02-Q2-Vel"/>
+                            <constraint firstItem="jKu-q4-xlV" firstAttribute="trailing" secondItem="KUE-4x-eRy" secondAttribute="trailing" id="wQS-VD-fXA"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="iig-Cn-RqX"/>
@@ -407,7 +457,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Bg-Db-k9u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1962.5954198473282" y="-32.394366197183103"/>
+            <point key="canvasLocation" x="1808" y="-32"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="UuR-Zg-54e">
@@ -432,6 +482,9 @@
         <image name="arrow.backward" catalog="system" width="128" height="95"/>
         <image name="f.square.fill" catalog="system" width="128" height="114"/>
         <image name="ic_catstagram_logo" width="476" height="96"/>
+        <image name="ic_home_heart" width="512" height="512"/>
+        <image name="ic_home_send" width="512" height="512"/>
+        <image name="ic_home_upload" width="512" height="512"/>
         <namedColor name="disabledButtonColor">
             <color red="0.77647058823529413" green="0.87058823529411766" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

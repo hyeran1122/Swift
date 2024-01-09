@@ -15,9 +15,7 @@ class LoginViewController: UIViewController {
     var userInfo: UserInfo?
     
     @IBOutlet weak var registerButton: UIButton!
-    
     @IBOutlet weak var loginButton: UIButton!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,9 +42,9 @@ class LoginViewController: UIViewController {
         self.password = text
     }
     
-    
+    //회원가입정보를 전달받고, 그것과 textField값이 일치하면 로그인이 되어야 한다.
     @IBAction func loginButtonDidTap(_ sender: UIButton) {
-        //회원가입정보를 전달받고, 그것과 textField값이 일치하면 로그인이 되어야 한다.
+        //유저인포를 받는 부분
         guard let userInfo = self.userInfo else { return }
         
         if userInfo.email == self.email
@@ -71,6 +69,7 @@ class LoginViewController: UIViewController {
         //3. 화면전환
         self.navigationController?.pushViewController(registerViewControllor, animated: true)
         
+        //ARC -> 강한참조, 약한참조(ARC를 낮춰줌)
         registerViewControllor.userInfo = { [weak self] (userInfo) in
             self?.userInfo = userInfo
         }
