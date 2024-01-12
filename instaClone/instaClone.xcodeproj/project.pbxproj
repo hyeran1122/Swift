@@ -17,6 +17,10 @@
 		78DF5A4F2B4D219800A5FE4F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DF5A4E2B4D219800A5FE4F /* HomeViewController.swift */; };
 		78DF5A532B4D5C4600A5FE4F /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DF5A512B4D5C4600A5FE4F /* FeedTableViewCell.swift */; };
 		78DF5A542B4D5C4600A5FE4F /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78DF5A522B4D5C4600A5FE4F /* FeedTableViewCell.xib */; };
+		78DF5A572B51154A00A5FE4F /* StoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DF5A552B51154A00A5FE4F /* StoryTableViewCell.swift */; };
+		78DF5A582B51154A00A5FE4F /* StoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78DF5A562B51154A00A5FE4F /* StoryTableViewCell.xib */; };
+		78DF5A5B2B511DC100A5FE4F /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DF5A592B511DC100A5FE4F /* StoryCollectionViewCell.swift */; };
+		78DF5A5C2B511DC100A5FE4F /* StoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78DF5A5A2B511DC100A5FE4F /* StoryCollectionViewCell.xib */; };
 		78FC7EDE2B3EA90900B0A908 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FC7EDD2B3EA90900B0A908 /* UIView+Extension.swift */; };
 		78FC7EE02B3EAA3100B0A908 /* UIViewController+Extantion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FC7EDF2B3EAA3100B0A908 /* UIViewController+Extantion.swift */; };
 		78FC7EE22B40268D00B0A908 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FC7EE12B40268D00B0A908 /* UserInfo.swift */; };
@@ -35,6 +39,10 @@
 		78DF5A4E2B4D219800A5FE4F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		78DF5A512B4D5C4600A5FE4F /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		78DF5A522B4D5C4600A5FE4F /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
+		78DF5A552B51154A00A5FE4F /* StoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryTableViewCell.swift; sourceTree = "<group>"; };
+		78DF5A562B51154A00A5FE4F /* StoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryTableViewCell.xib; sourceTree = "<group>"; };
+		78DF5A592B511DC100A5FE4F /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		78DF5A5A2B511DC100A5FE4F /* StoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		78FC7EDD2B3EA90900B0A908 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		78FC7EDF2B3EAA3100B0A908 /* UIViewController+Extantion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extantion.swift"; sourceTree = "<group>"; };
 		78FC7EE12B40268D00B0A908 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
@@ -100,6 +108,10 @@
 			children = (
 				78DF5A512B4D5C4600A5FE4F /* FeedTableViewCell.swift */,
 				78DF5A522B4D5C4600A5FE4F /* FeedTableViewCell.xib */,
+				78DF5A552B51154A00A5FE4F /* StoryTableViewCell.swift */,
+				78DF5A562B51154A00A5FE4F /* StoryTableViewCell.xib */,
+				78DF5A592B511DC100A5FE4F /* StoryCollectionViewCell.swift */,
+				78DF5A5A2B511DC100A5FE4F /* StoryCollectionViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -165,6 +177,8 @@
 				78DB30052B33021F0006EE43 /* LaunchScreen.storyboard in Resources */,
 				78DF5A542B4D5C4600A5FE4F /* FeedTableViewCell.xib in Resources */,
 				78DB30022B33021F0006EE43 /* Assets.xcassets in Resources */,
+				78DF5A582B51154A00A5FE4F /* StoryTableViewCell.xib in Resources */,
+				78DF5A5C2B511DC100A5FE4F /* StoryCollectionViewCell.xib in Resources */,
 				78DB30002B33021D0006EE43 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -178,6 +192,7 @@
 			files = (
 				78DB300D2B34026E0006EE43 /* LoginViewController.swift in Sources */,
 				78DB2FF92B33021D0006EE43 /* AppDelegate.swift in Sources */,
+				78DF5A5B2B511DC100A5FE4F /* StoryCollectionViewCell.swift in Sources */,
 				78DB2FFB2B33021D0006EE43 /* SceneDelegate.swift in Sources */,
 				78DF5A4F2B4D219800A5FE4F /* HomeViewController.swift in Sources */,
 				78FC7EDE2B3EA90900B0A908 /* UIView+Extension.swift in Sources */,
@@ -185,6 +200,7 @@
 				78FC7EE22B40268D00B0A908 /* UserInfo.swift in Sources */,
 				78DF5A532B4D5C4600A5FE4F /* FeedTableViewCell.swift in Sources */,
 				784941822B340D02008F3048 /* RegisterViewController.swift in Sources */,
+				78DF5A572B51154A00A5FE4F /* StoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

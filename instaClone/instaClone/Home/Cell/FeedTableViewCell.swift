@@ -18,7 +18,7 @@ class FeedTableViewCell: UITableViewCell {
     @IBOutlet weak var labelFeed: UILabel!
     @IBOutlet weak var imageViewMyProfile: UIImageView!
     
-    
+    //좋아요 버튼
     @IBAction func actionIsHeart(_ sender: Any) {
         if buttonIsHeart.isSelected {
             buttonIsHeart.isSelected = false
@@ -27,6 +27,7 @@ class FeedTableViewCell: UITableViewCell {
         }
     }
     
+    //북마크 버튼
     @IBAction func actionButtonMark(_ sender: Any) {
         if buttonIsBookMark.isSelected {
             buttonIsBookMark.isSelected = false
@@ -40,10 +41,10 @@ class FeedTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         
-        imageViewUserProfile.layer.cornerRadius = 22.5
+        imageViewUserProfile.layer.cornerRadius = 12.5
         imageViewUserProfile.clipsToBounds = true           //코너라운드 줬을 떄 안에 이미지도 같이 잘리게 하기
         
-        imageViewMyProfile.layer.cornerRadius = 12.5        //코너레디우스 보다 작게 넣는건가?
+        imageViewMyProfile.layer.cornerRadius = 12.5
         imageViewMyProfile.clipsToBounds = true
         
         //커스텀 라벨
