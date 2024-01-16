@@ -15,6 +15,9 @@ class ProfileCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var addProfileImageView: UIImageView!
     @IBOutlet weak var profileAditButton: UIButton!
     @IBOutlet weak var addFriendButton: UIButton!
+    @IBOutlet weak var postingCountLabel: UILabel!
+    @IBOutlet weak var followerCountLabel: UILabel!
+    @IBOutlet weak var followingCountLabel: UILabel!
     
     
     
@@ -29,12 +32,16 @@ class ProfileCollectionViewCell: UICollectionViewCell {
         addProfileImageView.layer.cornerRadius = 24/2       //설정한 크기의 반절을 줘야 원이된다.
         
         profileAditButton.layer.cornerRadius = 5
-        profileAditButton.layer.borderColor = UIColor.lightGray.cgColor        //cg컬러하는 이유는 코어그레픽이라는 라이브러리르 사요해서 보더컬러를 줘야하기 떄문에
+        
+        profileAditButton.layer.borderColor = UIColor.lightGray.cgColor        //cg컬러하는 이유는 코어그레픽이라는 라이브러리르 사용해서 보더컬러를 주기 때문에
         profileAditButton.layer.borderWidth = 1
         
         addFriendButton.layer.cornerRadius = 3
         addFriendButton.layer.borderColor = UIColor.lightGray.cgColor
         addFriendButton.layer.borderWidth = 1
+        
+        //랜덤으로 프로필 상 숫자 넣어주기
+        [postingCountLabel,followerCountLabel,followingCountLabel]
+            .forEach { $0.text = "\(Int.random(in: 0...10))"}
     }
-    
 }
