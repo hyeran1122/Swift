@@ -21,6 +21,9 @@
 		78DF5A582B51154A00A5FE4F /* StoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78DF5A562B51154A00A5FE4F /* StoryTableViewCell.xib */; };
 		78DF5A5B2B511DC100A5FE4F /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DF5A592B511DC100A5FE4F /* StoryCollectionViewCell.swift */; };
 		78DF5A5C2B511DC100A5FE4F /* StoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78DF5A5A2B511DC100A5FE4F /* StoryCollectionViewCell.xib */; };
+		78DF5A5F2B5621C800A5FE4F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DF5A5E2B5621C800A5FE4F /* ProfileViewController.swift */; };
+		78DF5A672B5656B100A5FE4F /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DF5A652B5656B100A5FE4F /* ProfileCollectionViewCell.swift */; };
+		78DF5A682B5656B100A5FE4F /* ProfileCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78DF5A662B5656B100A5FE4F /* ProfileCollectionViewCell.xib */; };
 		78FC7EDE2B3EA90900B0A908 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FC7EDD2B3EA90900B0A908 /* UIView+Extension.swift */; };
 		78FC7EE02B3EAA3100B0A908 /* UIViewController+Extantion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FC7EDF2B3EAA3100B0A908 /* UIViewController+Extantion.swift */; };
 		78FC7EE22B40268D00B0A908 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FC7EE12B40268D00B0A908 /* UserInfo.swift */; };
@@ -43,6 +46,9 @@
 		78DF5A562B51154A00A5FE4F /* StoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryTableViewCell.xib; sourceTree = "<group>"; };
 		78DF5A592B511DC100A5FE4F /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		78DF5A5A2B511DC100A5FE4F /* StoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		78DF5A5E2B5621C800A5FE4F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		78DF5A652B5656B100A5FE4F /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
+		78DF5A662B5656B100A5FE4F /* ProfileCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCollectionViewCell.xib; sourceTree = "<group>"; };
 		78FC7EDD2B3EA90900B0A908 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		78FC7EDF2B3EAA3100B0A908 /* UIViewController+Extantion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extantion.swift"; sourceTree = "<group>"; };
 		78FC7EE12B40268D00B0A908 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
@@ -78,6 +84,7 @@
 		78DB2FF72B33021D0006EE43 /* instaClone */ = {
 			isa = PBXGroup;
 			children = (
+				78DF5A5D2B56219C00A5FE4F /* Profile */,
 				78DF5A4D2B4D218200A5FE4F /* Home */,
 				78DB2FF82B33021D0006EE43 /* AppDelegate.swift */,
 				78DB2FFA2B33021D0006EE43 /* SceneDelegate.swift */,
@@ -112,6 +119,24 @@
 				78DF5A562B51154A00A5FE4F /* StoryTableViewCell.xib */,
 				78DF5A592B511DC100A5FE4F /* StoryCollectionViewCell.swift */,
 				78DF5A5A2B511DC100A5FE4F /* StoryCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		78DF5A5D2B56219C00A5FE4F /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				78DF5A602B5651DD00A5FE4F /* Cell */,
+				78DF5A5E2B5621C800A5FE4F /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		78DF5A602B5651DD00A5FE4F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				78DF5A652B5656B100A5FE4F /* ProfileCollectionViewCell.swift */,
+				78DF5A662B5656B100A5FE4F /* ProfileCollectionViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -177,6 +202,7 @@
 				78DB30052B33021F0006EE43 /* LaunchScreen.storyboard in Resources */,
 				78DF5A542B4D5C4600A5FE4F /* FeedTableViewCell.xib in Resources */,
 				78DB30022B33021F0006EE43 /* Assets.xcassets in Resources */,
+				78DF5A682B5656B100A5FE4F /* ProfileCollectionViewCell.xib in Resources */,
 				78DF5A582B51154A00A5FE4F /* StoryTableViewCell.xib in Resources */,
 				78DF5A5C2B511DC100A5FE4F /* StoryCollectionViewCell.xib in Resources */,
 				78DB30002B33021D0006EE43 /* Main.storyboard in Resources */,
@@ -196,7 +222,9 @@
 				78DB2FFB2B33021D0006EE43 /* SceneDelegate.swift in Sources */,
 				78DF5A4F2B4D219800A5FE4F /* HomeViewController.swift in Sources */,
 				78FC7EDE2B3EA90900B0A908 /* UIView+Extension.swift in Sources */,
+				78DF5A5F2B5621C800A5FE4F /* ProfileViewController.swift in Sources */,
 				78FC7EE02B3EAA3100B0A908 /* UIViewController+Extantion.swift in Sources */,
+				78DF5A672B5656B100A5FE4F /* ProfileCollectionViewCell.swift in Sources */,
 				78FC7EE22B40268D00B0A908 /* UserInfo.swift in Sources */,
 				78DF5A532B4D5C4600A5FE4F /* FeedTableViewCell.swift in Sources */,
 				784941822B340D02008F3048 /* RegisterViewController.swift in Sources */,
