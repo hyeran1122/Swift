@@ -198,7 +198,7 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
-                        <outlet property="profileCollectionView" destination="5qy-2g-Psr" id="1MD-Q4-r6h"/>
+                        <outlet property="profileCollectionView" destination="5qy-2g-Psr" id="5EH-Hm-fzz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qd2-r5-LfM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
