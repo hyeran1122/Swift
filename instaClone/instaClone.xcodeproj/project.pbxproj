@@ -24,6 +24,8 @@
 		78DF5A5F2B5621C800A5FE4F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DF5A5E2B5621C800A5FE4F /* ProfileViewController.swift */; };
 		78DF5A672B5656B100A5FE4F /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DF5A652B5656B100A5FE4F /* ProfileCollectionViewCell.swift */; };
 		78DF5A682B5656B100A5FE4F /* ProfileCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78DF5A662B5656B100A5FE4F /* ProfileCollectionViewCell.xib */; };
+		78DF5A6D2B58FDFF00A5FE4F /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DF5A6B2B58FDFF00A5FE4F /* PostCollectionViewCell.swift */; };
+		78DF5A6E2B58FDFF00A5FE4F /* PostCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78DF5A6C2B58FDFF00A5FE4F /* PostCollectionViewCell.xib */; };
 		78FC7EDE2B3EA90900B0A908 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FC7EDD2B3EA90900B0A908 /* UIView+Extension.swift */; };
 		78FC7EE02B3EAA3100B0A908 /* UIViewController+Extantion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FC7EDF2B3EAA3100B0A908 /* UIViewController+Extantion.swift */; };
 		78FC7EE22B40268D00B0A908 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FC7EE12B40268D00B0A908 /* UserInfo.swift */; };
@@ -49,6 +51,8 @@
 		78DF5A5E2B5621C800A5FE4F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		78DF5A652B5656B100A5FE4F /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
 		78DF5A662B5656B100A5FE4F /* ProfileCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCollectionViewCell.xib; sourceTree = "<group>"; };
+		78DF5A6B2B58FDFF00A5FE4F /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
+		78DF5A6C2B58FDFF00A5FE4F /* PostCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCollectionViewCell.xib; sourceTree = "<group>"; };
 		78FC7EDD2B3EA90900B0A908 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		78FC7EDF2B3EAA3100B0A908 /* UIViewController+Extantion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extantion.swift"; sourceTree = "<group>"; };
 		78FC7EE12B40268D00B0A908 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
@@ -135,10 +139,28 @@
 		78DF5A602B5651DD00A5FE4F /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				78DF5A6A2B58FDCF00A5FE4F /* PostCell */,
+				78DF5A692B58FDBA00A5FE4F /* ProfileCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		78DF5A692B58FDBA00A5FE4F /* ProfileCell */ = {
+			isa = PBXGroup;
+			children = (
 				78DF5A652B5656B100A5FE4F /* ProfileCollectionViewCell.swift */,
 				78DF5A662B5656B100A5FE4F /* ProfileCollectionViewCell.xib */,
 			);
-			path = Cell;
+			path = ProfileCell;
+			sourceTree = "<group>";
+		};
+		78DF5A6A2B58FDCF00A5FE4F /* PostCell */ = {
+			isa = PBXGroup;
+			children = (
+				78DF5A6B2B58FDFF00A5FE4F /* PostCollectionViewCell.swift */,
+				78DF5A6C2B58FDFF00A5FE4F /* PostCollectionViewCell.xib */,
+			);
+			path = PostCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +221,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78DF5A6E2B58FDFF00A5FE4F /* PostCollectionViewCell.xib in Resources */,
 				78DB30052B33021F0006EE43 /* LaunchScreen.storyboard in Resources */,
 				78DF5A542B4D5C4600A5FE4F /* FeedTableViewCell.xib in Resources */,
 				78DB30022B33021F0006EE43 /* Assets.xcassets in Resources */,
@@ -228,6 +251,7 @@
 				78FC7EE22B40268D00B0A908 /* UserInfo.swift in Sources */,
 				78DF5A532B4D5C4600A5FE4F /* FeedTableViewCell.swift in Sources */,
 				784941822B340D02008F3048 /* RegisterViewController.swift in Sources */,
+				78DF5A6D2B58FDFF00A5FE4F /* PostCollectionViewCell.swift in Sources */,
 				78DF5A572B51154A00A5FE4F /* StoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
