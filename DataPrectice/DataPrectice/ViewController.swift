@@ -66,6 +66,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.deselectRow(at: indexPath, animated: true)
         
         let item = models[indexPath.row]
+        
         let sheet = UIAlertController(title: "Edit",
                                       message: nil,
                                       preferredStyle: .actionSheet)
@@ -73,21 +74,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         sheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil ))
         
         sheet.addAction(UIAlertAction(title: "Edit", style: .default, handler: { _ in
+            
             let alert = UIAlertController(title: "Edit Item",
                                           message: "Edit your maeeage",
                                           preferredStyle: .alert)
-            
             alert.addTextField(configurationHandler: nil)
             alert.textFields?.first?.text = item.name
             alert.addAction(UIAlertAction(title: "Save", style: .cancel, handler: { [weak self] _ in
                 guard let field = alert.textFields?.first, let newName = field.text, !newName.isEmpty else {
                     return
                 }
-                
                 self?.updateItem(item: item, newName: newName)
             }))
             
-            self.present(sheet, animated: true)
+            self.present(alert, animated: true)
             
         }))
         
@@ -133,6 +133,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         do {
             try context.save()
+            getAllItems()
         }
         catch {
             
@@ -143,6 +144,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         item.name = newName
         do {
             try context.save()
+            getAllItems()
         }
         catch {
             
