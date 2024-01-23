@@ -32,8 +32,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
-    // MARK: - Core Data stack
-
+    // MARK: - Core Data stack / 읽고, 저장하는 기능을 제공 = 데이터 베이스와 유사한 기능
+    
     lazy var persistentContainer: NSPersistentContainer = {
         /*
          The persistent container for the application. This implementation
@@ -61,7 +61,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return container
     }()
 
-    // MARK: - Core Data Saving support
+    // MARK: - Core Data Saving support. /  데이터를 실제로 호출하고 저장하는 기능, 변경사항을 확인하고 저장.
 
     func saveContext () {
         let context = persistentContainer.viewContext

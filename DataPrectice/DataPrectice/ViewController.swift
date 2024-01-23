@@ -29,6 +29,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.dataSource =  self
         tableView.frame = view.bounds
         
+        // + 버튼
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didTapAdd))
     }
     
@@ -79,7 +80,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                                           message: "Edit your maeeage",
                                           preferredStyle: .alert)
             alert.addTextField(configurationHandler: nil)
-            alert.textFields?.first?.text = item.name
+            alert.textFields?.first?.text = item.name //수정할 텍스트 가져오기
             alert.addAction(UIAlertAction(title: "Save", style: .cancel, handler: { [weak self] _ in
                 guard let field = alert.textFields?.first, let newName = field.text, !newName.isEmpty else {
                     return
@@ -97,7 +98,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         present(sheet, animated: true)
         
-        
     }
     
     
@@ -105,7 +105,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func getAllItems() {
         do {
             models = try context.fetch(ToDoListItem.fetchRequest())
-            DispatchQueue.main.async {
+            DispatchQueue.main.async {  //메인스레드에서 실행 = UI 관련된 작업은 메인쓰레드에서 실행되어야 한다.
                 self.tableView.reloadData()
             }
         }
