@@ -19,7 +19,7 @@ final class MamberlistManager {
             Member(name: "스티브", age: 50, phone: "010-3333-4444", address: "미국"),
             Member(name: "쿡", age: 30, phone: "010-4444-5555", address:  "캘리포니아"),
             Member(name: "베조스", age: 50, phone: "010-5555-6666", address: "하와이"),
-            Member(name: "베트맨", age: 40, phone: "010-6666-7777", address: "고담"),
+            Member(name: "배트맨", age: 40, phone: "010-6666-7777", address: "고담"),
             Member(name: "조커", age: 40, phone: "010-7777-8888", address: "고담")
         ]
     }
@@ -43,6 +43,9 @@ final class MamberlistManager {
     subscript(index: Int) -> Member {
         get {
             return membersList[index]
+        }
+        set {
+            membersList[index] = newValue
         }
     }
 }

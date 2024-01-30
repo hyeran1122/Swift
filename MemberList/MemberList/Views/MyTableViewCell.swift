@@ -9,6 +9,15 @@ import UIKit
 
 class MyTableViewCell: UITableViewCell {
     
+    var member: Member? {
+        //맴버가 변할 때 마다 실행됨
+        didSet {
+            mainImageView.image = member?.memberImage
+            memberNameLable.text = member?.name
+            addressLabelL.text = member?.address
+        }
+    }
+    
     //MARK: - UI구현
     
     let mainImageView: UIImageView = {

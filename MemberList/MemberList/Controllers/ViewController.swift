@@ -42,6 +42,7 @@ class ViewController: UIViewController {
     func setupTableView() {
         tableview.dataSource = self
         tableview.rowHeight = 60    //셀 높이 설정
+        tableview.register(MyTableViewCell.self, forCellReuseIdentifier: "MemberCell")
     }
     
     func setupDatas() {
@@ -66,11 +67,22 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return memberListManager.getMembersList().count //배열의 수만큼 셀 수가 생성 됨
+        return memberListManager.getMembersList().count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MemberCell", for: indexPath) as! MyTableViewCell
+        
+//        cell.mainImageView.image = memberListManager.getMembersList()[indexPath.row]
+//        cell.mainImageView.image = memberListManager[indexPath.row].memberImage
+//        cell.memberNameLable.text = memberListManager[indexPath.row].name
+//        cell.addressLabelL.text = memberListManager[indexPath.row].address
+        cell.member = memberListManager[indexPath.row]
+        cell.selectionStyle = .none
+        
+        return cell
+        
     }
     
     
